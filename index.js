@@ -10,12 +10,12 @@ const map = (sourceArray, fn)=>{
 
 const reduce = (sourceArray, fn, begin)=>{
   if (begin) {
-      let total = begin
+      let entire = begin
       for (let i = 0; i < sourceArray.length; i++) {
         let element = sourceArray[i]
-        total = fn(total, element)
+        entir = fn(entire, element)
       }
-      return total
+      return entire
   }
   else {
       let total = sourceArray[0]
