@@ -13,7 +13,7 @@ const reduce = (sourceArray, fn, begin)=>{
       let entire = begin
       for (let i = 0; i < sourceArray.length; i++) {
         let element = sourceArray[i]
-        entir = fn(entire, element)
+        entire = fn(entire, element)
       }
       return entire
   }
