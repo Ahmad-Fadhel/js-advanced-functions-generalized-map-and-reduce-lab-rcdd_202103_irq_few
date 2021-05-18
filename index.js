@@ -8,9 +8,9 @@ const map = (sourceArray, fn)=>{
   return newArray
 };
 
-const reduce = (sourceArray, fn, start)=>{
-  if (start) {
-      let total = start
+const reduce = (sourceArray, fn, begin)=>{
+  if (begin) {
+      let total = begin
       for (let i = 0; i < sourceArray.length; i++) {
         let element = sourceArray[i]
         total = fn(total, element)
